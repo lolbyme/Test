@@ -3,6 +3,11 @@
   <groupId>Test</groupId>
   <artifactId>Test-Junit</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.7.5.201505241946</version>
+</plugin>
   <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
