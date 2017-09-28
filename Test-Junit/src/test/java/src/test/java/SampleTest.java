@@ -16,6 +16,6 @@ public class SampleTest {
 	public void SimpleTest1() {
 		int c = 2;
 		int d = 2;
-		assertTrue((c+d)==4);
+		assertTrue((c+d)==3);
 	}
 }
