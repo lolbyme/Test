@@ -1,29 +1,38 @@
 package com.mycompany.app;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello  Worldd!" );
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
-        System.out.println("A NullPointerException is a drag...");
-        Object myObject = null;
-        /**
-         * Checker prevents this from compiling...
-         */
-//        System.out.println("myObject: " + myObject.toString());
-        /**
-         * ... which is simply fantastic. It shows:
-         *
-         * error: [dereference.of.nullable] dereference of possibly-null
-         * reference myObject
-         *
-         * http://checkerframework.org
-         */
-        System.out.println("... but thankfully, Checker has our back: http://checkerframework.org");
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public AppTest( String testName )
+    {
+        super( testName );
+    }
+
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( AppTest.class );
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
+        assertTrue( true );
     }
 }
