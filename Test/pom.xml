@@ -18,12 +18,18 @@
   </dependencies>
 
    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.5.201505241946</version>
-<executions>
+  <plugins>
+    <plugin>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+      <version>0.6.4.201312101107</version>
+      <executions>
+        <execution>
+          <id>pre-unit-test</id>
+          <goals>
+            <goal>prepare-agent</goal>
+          </goals>
+        </execution>
         <execution>
           <id>post-unit-test</id>
           <phase>test</phase>
@@ -32,7 +38,7 @@
           </goals>
         </execution>
       </executions>
-            </plugin>
-        </plugins>
-    </build>
+    </plugin>
+  </plugins>
+</build>
 </project>
