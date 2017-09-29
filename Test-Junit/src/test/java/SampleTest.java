@@ -1,8 +1,10 @@
-import static org.junit.Assert.assertTrue;
+package src.test.java;
+
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestClass {
+public class SampleTest {
 
 	@Test
 	public void SimpleTest() {
